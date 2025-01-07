@@ -161,217 +161,388 @@
   </div>
   </div>
   <div class="container-fluid recent fh5co-portfolio" id="portfolio">
-    <div class="container">
-      <h2>Project</h2>
-      <div class="row">
-        <div class="bx bx-1">
-          <div class="card">
-            <img class="card-img" src="assets/img/formlogin.png" alt="" style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="https://login-tias.vercel.app/" target="_blank"><img
-                  src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Form Login</h5>
-              </div>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            .filter-buttons {
+                margin: 20px 0;
+                text-align: center;
+            }
+            
+            .filter-button {
+                padding: 8px 16px;
+                margin: 0 5px;
+                border: none;
+                border-radius: 4px;
+                background-color: #f0f0f0;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            
+            .filter-button.active {
+                background-color: #007bff;
+                color: white;
+            }
+            
+            .bx {
+                transition: all 0.3s ease;
+            }
+            
+            .bx.hide {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Project</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-button active" data-category="all">Semua</button>
+                <button class="filter-button" data-category="web">Web App</button>
+                <button class="filter-button" data-category="game">Game</button>
+                <button class="filter-button" data-category="tools">Tools</button>
             </div>
-          </div>
-        </div>
-        <div class="bx bx-2">
-          <div class="card"> <img class="card-img" src="assets/img/portfoliotias.png " alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="#"><img src="assets/img/heart.png" class="heart"
-                  alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Portfolio</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bx bx-1">
-          <div class="card"> <img class="card-img" src="assets/img/calculator.png" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="https://kalkulator-tias.vercel.app/" target="_blank"><img
-                  src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Kalkulator</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bx bx-1">
-          <div class="card"> <img class="card-img" src="assets/img/Dashboard.png" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="https://dashboard-dusky-phi-61.vercel.app" target="_blank"><img
-                  src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Dashboard</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bx bx-1">
-          <div class="card"> <img class="card-img" src="assets/img/ular.png" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="https://game-ular-three.vercel.app/" target="_blank"><img
-                  src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Game Ular</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bx bx-1">
-          <div class="card"> <img class="card-img" src="assets/img/grafikpenjualan.png" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="/grafikpenjualan/index.html" target="_blank"><img
-                  src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Grafik Penjualan</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div>
-        <div class="bx bx-1">
-          <div class="card"> <img class="card-img" src="assets/img/sertifHTML.jpg" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="https://www.sololearn.com/certificates/CC-C7KBME1Y" target="_blank"><img src="assets/img/heart.png" class="heart"
-                  alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Sertifikat Solo Learn HTML</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bx bx-2">
-          <div class="card"> <img class="card-img" src="assets/img/sertifCSS.jpg" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="https://www.sololearn.com/certificates/CC-FJO1PHA7"><img src="assets/img/heart.png" class="heart"
-                  alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Sertifikat Solo Learn CSS</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bx bx-2">
-          <div class="card"> <img class="card-img" src="assets/img/SERTIFJS.jpg" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="https://www.sololearn.com/certificates/CC-VBRMJCQL"><img src="assets/img/heart.png" class="heart"
-                  alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Sertifikat Solo Learn JS</h5>
-              </div>
-            </div>
-          </div>
-        </div><div class="bx bx-2">
-          <div class="card"> <img class="card-img" src="assets/img/JSIntermediate.jpg" alt=""
-              style="object-fit: cover; width: 500px;">
-            <div class="card-img-overlay"> <a href="assets/img/JSIntermediate.jpg"><img src="assets/img/heart.png" class="heart"
-                  alt="heart icon"></a>
-              <div class="bottom-text">
-                <h5 class="card-title">Sertifikat Solo Learn Java Script Intermediate</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bx bx-2">
-        <div class="card"> <img class="card-img" src="assets/img/Sertif sololearn.jpeg" alt=""
-            style="object-fit: cover; width: 500px;">
-          <div class="card-img-overlay"> <a href="https://www.sololearn.com/certificates/CC-NJ2XAIJ7"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-            <div class="bottom-text">
-              <h5 class="card-title">Sertifikat Solo Learn Web Development</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="card-img-overlay"> <a href="https://kalkulator-tias.vercel.app/" target="_blank"><img
-          src="assets/img/heart.png" class="heart" alt="heart icon"></a>
-      <div class="bottom-text">
-        <h5 class="card-title"></h5>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-  </div>
-  </div>
-  <!--  -->
-  <div class="container-fluid fh5co-insta-feed activity">
-    <div class="container recent">
-      <div class="row mb-5 pb-5">
-        <div class="col-lg-6">
-          <div class="twit-box">
-            <div class="media mb-3">
-              <div class="media-body">
-                <h5 class="mb-0 mt-3">Anni Tias lestari</h5>
-                <p>@annitias19</p>
-              </div>
-            </div>
-            <p class="text-justify"> “Dreaming big and working hard".
-            </p>
-            <div class="clearfix"> <a href="#" class="btn btn-primary mt-2 float-right">Follow</a> </div>
-          </div>
-        </div>
-        <div class="col-lg-6 feed-caro">
-          <h2>Instagram feed</h2>
-          <div class="owl-carousel owl-carousel4 owl-theme">
-            <div>
-              <div class="card"> <img class="card-img" src="assets/img/ig1.jpeg" alt="">
-                <div class="card-img-overlay"> </div>
-              </div>
-            </div>
-            <div>
-              <div class="card"> <img class="card-img" src="assets/img/ig2.jpeg" alt="">
-                <div class="card-img-overlay"> </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="text-center d-block">Find me on social media</h2>
-      <div class="row social-links">
-        <ul class="nav mx-auto">
-          <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/fh5co"><img
-                src="assets/img/facebook.png" alt=""></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="https://twitter.com/fh5co"><img src="assets/img/twitter.png"
-                alt=""></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/pinterest.png" alt=""></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/google-plus.png" alt=""></a> </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <footer class="container-fluid p-0 pr-0">
-    <div class="col-md-6 content-us">
-      <div class="contact-form" id="contact">
-        <h3 class="text-uppercase">Contact me</h3>
-        <input type="text" class="form-control" placeholder="Your Name">
-        <input type="text" class="form-control" placeholder="Your Email">
-        <textarea class="form-control" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-      </div>
-    </div>
-    </div>
-    <div class="copy pt-4 pb-4">
-      <p>With by Anni Tias Lestari</p>
-    </div>
-  </footer>
-
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
+            
+            <div class="row">
+                <!-- Form Login -->
+                <div class="bx bx-1" data-category="web">
+                    <div class="card">
+                        <img class="card-img" src="assets/img/formlogin.png" alt="" style="object-fit: cover; width: 500px;">
+                        <div class="card-img-overlay">
+                            <a href="https://login-tias.vercel.app/" target="_blank">
+                                <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                            </a>
+                            <div class="bottom-text">
+                                <h5 class="card-title">Form Login</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio -->
+                <div class="bx bx-2" data-category="web">
+                    <!-- Portfolio content remains same -->
+                    <div class="card">
+                        <img class="card-img" src="assets/img/portfoliotias.png" alt="" style="object-fit: cover; width: 500px;">
+                        <div class="card-img-overlay">
+                            <a href="#"><img src="assets/img/heart.png" class="heart" alt="heart icon"></a>
+                            <div class="bottom-text">
+                                <h5 class="card-title">Portfolio</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Calculator -->
+                <div class="bx bx-1" data-category="tools">
+                    <!-- Calculator content remains same -->
+                    <div class="card">
+                        <img class="card-img" src="assets/img/calculator.png" alt="" style="object-fit: cover; width: 500px;">
+                        <div class="card-img-overlay">
+                            <a href="https://kalkulator-tias.vercel.app/" target="_blank">
+                                <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                            </a>
+                            <div class="bottom-text">
+                                <h5 class="card-title">Kalkulator</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dashboard -->
+                <div class="bx bx-1" data-category="web">
+                    <!-- Dashboard content remains same -->
+                    <div class="card">
+                        <img class="card-img" src="assets/img/Dashboard.png" alt="" style="object-fit: cover; width: 500px;">
+                        <div class="card-img-overlay">
+                            <a href="https://dashboard-dusky-phi-61.vercel.app" target="_blank">
+                                <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                            </a>
+                            <div class="bottom-text">
+                                <h5 class="card-title">Dashboard</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Snake Game -->
+                <div class="bx bx-1" data-category="game">
+                    <!-- Snake Game content remains same -->
+                    <div class="card">
+                        <img class="card-img" src="assets/img/ular.png" alt="" style="object-fit: cover; width: 500px;">
+                        <div class="card-img-overlay">
+                            <a href="https://game-ular-three.vercel.app/" target="_blank">
+                                <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                            </a>
+                            <div class="bottom-text">
+                                <h5 class="card-title">Game Ular</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sales Chart -->
+                <div class="bx bx-1" data-category="tools">
+                    <!-- Sales Chart content remains same -->
+                    <div class="card">
+                        <img class="card-img" src="assets/img/grafikpenjualan.png" alt="" style="object-fit: cover; width: 500px;">
+                        <div class="card-img-overlay">
+                            <a href="/grafikpenjualan/index.html" target="_blank">
+                                <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                            </a>
+                            <div class="bottom-text">
+                                <h5 class="card-title">Grafik Penjualan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificates">
+                  <div class="bx bx-1">
+                    <div class="card">
+                      <img class="card-img" src="assets/img/sertifHTML.jpg" alt="" style="object-fit: cover; width: 500px;">
+                      <div class="card-img-overlay">
+                        <a href="https://www.sololearn.com/certificates/CC-C7KBME1Y" target="_blank">
+                          <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                        </a>
+                        <div class="bottom-text">
+                          <h5 class="card-title">Sertifikat Solo Learn HTML</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="bx bx-2">
+                    <div class="card">
+                      <img class="card-img" src="assets/img/sertifCSS.jpg" alt="" style="object-fit: cover; width: 500px;">
+                      <div class="card-img-overlay">
+                        <a href="https://www.sololearn.com/certificates/CC-FJO1PHA7" target="_blank">
+                          <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                        </a>
+                        <div class="bottom-text">
+                          <h5 class="card-title">Sertifikat Solo Learn CSS</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="bx bx-2">
+                    <div class="card">
+                      <img class="card-img" src="assets/img/SERTIFJS.jpg" alt="" style="object-fit: cover; width: 500px;">
+                      <div class="card-img-overlay">
+                        <a href="https://www.sololearn.com/certificates/CC-VBRMJCQL" target="_blank">
+                          <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                        </a>
+                        <div class="bottom-text">
+                          <h5 class="card-title">Sertifikat Solo Learn JS</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="bx bx-2">
+                    <div class="card">
+                      <img class="card-img" src="assets/img/JSIntermediate.jpg" alt="" style="object-fit: cover; width: 500px;">
+                      <div class="card-img-overlay">
+                        <a href="assets/img/JSIntermediate.jpg">
+                          <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                        </a>
+                        <div class="bottom-text">
+                          <h5 class="card-title">Sertifikat Solo Learn Java Script Intermediate</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="bx bx-2">
+                    <div class="card">
+                      <img class="card-img" src="assets/img/Sertif sololearn.jpeg" alt="" style="object-fit: cover; width: 500px;">
+                      <div class="card-img-overlay">
+                        <a href="https://www.sololearn.com/certificates/CC-NJ2XAIJ7" target="_blank">
+                          <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                        </a>
+                        <div class="bottom-text">
+                          <h5 class="card-title">Sertifikat Solo Learn Web Development</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="card-img-overlay">
+                  <a href="https://kalkulator-tias.vercel.app/" target="_blank">
+                    <img src="assets/img/heart.png" class="heart" alt="heart icon">
+                  </a>
+                  <div class="bottom-text">
+                    <h5 class="card-title"></h5>
+                  </div>
+                </div>
+                
+                <div class="container-fluid fh5co-insta-feed activity">
+                  <div class="container recent">
+                    <div class="row mb-5 pb-5">
+                      <div class="col-lg-6">
+                        <div class="twit-box">
+                          <div class="media mb-3">
+                            <div class="media-body">
+                              <h5 class="mb-0 mt-3">Anni Tias lestari</h5>
+                              <p>@annitias19</p>
+                            </div>
+                          </div>
+                          <p class="text-justify">“Dreaming big and working hard".</p>
+                          <div class="clearfix">
+                            <a href="#" class="btn btn-primary mt-2 float-right">Follow</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 feed-caro">
+                        <h2>Instagram feed</h2>
+                        <div class="owl-carousel owl-carousel4 owl-theme">
+                          <div>
+                            <div class="card">
+                              <img class="card-img" src="assets/img/ig1.jpeg" alt="">
+                              <div class="card-img-overlay"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="card">
+                              <img class="card-img" src="assets/img/ig2.jpeg" alt="">
+                              <div class="card-img-overlay"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="text-center d-block">Find me on social media</h2>
+                    <div class="row social-links">
+                      <ul class="nav mx-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.facebook.com/fh5co">
+                            <img src="assets/img/facebook.png" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://twitter.com/fh5co">
+                            <img src="assets/img/twitter.png" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <img src="assets/img/pinterest.png" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <img src="assets/img/google-plus.png" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <section class="contact-us" id="contact-dua">
+                  <div class="container">
+                    <h2 class="contact-title">Contact Us</h2>
+                    <div class="map-container" style="width: 100%; max-width: 800px; margin: 20px auto;">
+                      <div class="map-wrapper" style="position: relative; padding-bottom: 56.25%; width: ; overflow: hidden;">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3100590942224!2d106.7379746!3d-6.346969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef0c86d53c9f%3A0xe437a85595ea73c1!2sUniversitas%20Pamulang%20(UNPAM)%20-%20Kampus%201!5e0!3m2!1sen!2sid!4v1646234567890!5m2!1sen!2sid"
+                          width="1000" height="550"
+                          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+                <script src="assets/js/popper.min.js"></script>
+                <script src="assets/js/bootstrap.min.js"></script>
+                <script src="assets/js/owl.carousel.min.js"></script>
+                <script src="assets/js/main.js"></script>
+                
+                <!-- Add this to your CSS section -->
+                <style>
+                  .filter-buttons {
+                    text-align: center;
+                    margin: 20px 0;
+                  }
+                
+                  .filter-button {
+                    padding: 8px 20px;
+                    margin: 0 5px;
+                    border: 2px solid #333;
+                    background: transparent;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                  }
+                
+                  .filter-button.active {
+                    background: #333;
+                    color: white;
+                  }
+                
+                  .bx {
+                    transition: all 0.3s ease;
+                    opacity: 1;
+                  }
+                
+                  .bx.hide {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                    padding: 0;
+                    margin: 0;
+                    overflow: hidden;
+                  }
+                
+                  .row {
+                    transition: all 0.3s ease;
+                  }
+                </style>
+                
+  
+  <!-- Add this JavaScript code -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Get all filter buttons and portfolio items
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const portfolioItems = document.querySelectorAll('.bx');
+  
+      // Add click event listener to each filter button
+      filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+              // Remove active class from all buttons
+              filterButtons.forEach(btn => btn.classList.remove('active'));
+              
+              // Add active class to clicked button
+              this.classList.add('active');
+  
+              // Get selected category
+              const selectedCategory = this.getAttribute('data-category');
+  
+              // Filter items
+              portfolioItems.forEach(item => {
+                  const itemCategory = item.getAttribute('data-category');
+                  
+                  if (selectedCategory === 'all' || selectedCategory === itemCategory) {
+                      item.classList.remove('hide');
+                  } else {
+                      item.classList.add('hide');
+                  }
+              });
+          });
+      });
+  
+      // Initially activate "all" filter
+      document.querySelector('.filter-button[data-category="all"]').classList.add('active');
+  });
+  </script>
 </body>
 
 </html>
